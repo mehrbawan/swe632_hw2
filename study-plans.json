@@ -1,0 +1,52 @@
+{
+    "Computer Science (Current)": {
+        "Year 1, Semester 1": ["Introduction to Programming", "Calculus I", "English Composition", "General Elective"],
+        "Year 1, Semester 2": ["Data Structures", "Calculus II", "Physics I", "Humanities Elective"],
+        "Year 2, Semester 1": ["Algorithms", "Discrete Mathematics", "Computer Organization", "Social Science Elective"],
+        "Year 2, Semester 2": ["Software Engineering", "Linear Algebra", "Physics II", "General Elective"],
+        "Year 3, Semester 1": ["Operating Systems", "Database Systems", "Theory of Computation", "Technical Elective"],
+        "Year 3, Semester 2": ["Computer Networks", "Artificial Intelligence", "Software Development", "Technical Elective"],
+        "Year 4, Semester 1": ["Cybersecurity", "Machine Learning", "Capstone Project I", "Technical Elective"],
+        "Year 4, Semester 2": ["Cloud Computing", "Data Science", "Capstone Project II", "General Elective"]
+    },
+    "Business Administration": {
+        "Year 1, Semester 1": ["Principles of Management", "Microeconomics", "English Composition", "General Elective"],
+        "Year 1, Semester 2": ["Financial Accounting", "Macroeconomics", "Business Statistics", "Humanities Elective"],
+        "Year 2, Semester 1": ["Marketing Principles", "Managerial Accounting", "Business Law", "Social Science Elective"],
+        "Year 2, Semester 2": ["Operations Management", "Organizational Behavior", "Business Communication", "General Elective"],
+        "Year 3, Semester 1": ["Corporate Finance", "Consumer Behavior", "Supply Chain Management", "Business Elective"],
+        "Year 3, Semester 2": ["Strategic Management", "International Business", "Entrepreneurship", "Business Elective"],
+        "Year 4, Semester 1": ["Business Analytics", "Leadership and Ethics", "Capstone Project I", "Business Elective"],
+        "Year 4, Semester 2": ["Digital Marketing", "Financial Management", "Capstone Project II", "General Elective"]
+    },
+    "Biology": {
+        "Year 1, Semester 1": ["General Biology I", "General Chemistry I", "English Composition", "General Elective"],
+        "Year 1, Semester 2": ["General Biology II", "General Chemistry II", "Calculus I", "Humanities Elective"],
+        "Year 2, Semester 1": ["Genetics", "Organic Chemistry I", "Physics I", "Social Science Elective"],
+        "Year 2, Semester 2": ["Cell Biology", "Organic Chemistry II", "Physics II", "General Elective"],
+        "Year 3, Semester 1": ["Microbiology", "Biochemistry", "Ecology", "Biology Elective"],
+        "Year 3, Semester 2": ["Molecular Biology", "Evolution", "Research Methods", "Biology Elective"],
+        "Year 4, Semester 1": ["Immunology", "Advanced Genetics", "Capstone Project I", "Biology Elective"],
+        "Year 4, Semester 2": ["Biotechnology", "Environmental Biology", "Capstone Project II", "General Elective"]
+    },
+    "Psychology": {
+        "Year 1, Semester 1": ["Introduction to Psychology", "English Composition", "General Elective", "Humanities Elective"],
+        "Year 1, Semester 2": ["Developmental Psychology", "Statistics for Psychology", "Social Science Elective", "General Elective"],
+        "Year 2, Semester 1": ["Abnormal Psychology", "Research Methods", "Biological Psychology", "General Elective"],
+        "Year 2, Semester 2": ["Cognitive Psychology", "Social Psychology", "Humanities Elective", "General Elective"],
+        "Year 3, Semester 1": ["Personality Psychology", "Clinical Psychology", "Psychology Elective", "Social Science Elective"],
+        "Year 3, Semester 2": ["Industrial-Organizational Psychology", "Child Psychology", "Psychology Elective", "General Elective"],
+        "Year 4, Semester 1": ["Forensic Psychology", "Health Psychology", "Capstone Project I", "Psychology Elective"],
+        "Year 4, Semester 2": ["Neuropsychology", "Counseling Psychology", "Capstone Project II", "General Elective"]
+    },
+    "Engineering": {
+        "Year 1, Semester 1": ["Engineering Fundamentals", "Calculus I", "Physics I", "English Composition"],
+        "Year 1, Semester 2": ["Engineering Design", "Calculus II", "Physics II", "General Elective"],
+        "Year 2, Semester 1": ["Thermodynamics", "Linear Algebra", "Materials Science", "Social Science Elective"],
+        "Year 2, Semester 2": ["Mechanics of Materials", "Differential Equations", "Circuits and Electronics", "General Elective"],
+        "Year 3, Semester 1": ["Fluid Mechanics", "Control Systems", "Engineering Elective", "Technical Elective"],
+        "Year 3, Semester 2": ["Heat Transfer", "Structural Analysis", "Engineering Elective", "Technical Elective"],
+        "Year 4, Semester 1": ["Capstone Project I", "Advanced Engineering Design", "Engineering Elective", "Technical Elective"],
+        "Year 4, Semester 2": ["Capstone Project II", "Engineering Ethics", "Engineering Elective", "General Elective"]
+    }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Academic Advisor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul style="list-style: none; padding: 0;">
+            <li class="sidebar-logo"><a href="index.html"><h1 class="logocorner">AWAN UNIVERSITY</h1></a></li>
+            <li class="sidebar-li"><a href="index.html"><i class="fas fa-home" style="font-size: 20px;"></i>Dashboard</a></li>
+            <li class="sidebar-li"><a href="major-selection.html"><i class="fas fa-book" style="font-size: 20px;"></i> Major Selection</a></li>
+            <li class="sidebar-li"><a href="study-plan.html" class="active"><i class="fas fa-calendar-alt" style="font-size: 20px;"></i> Study Plan</a></li>
+            <li class="sidebar-li"><a href="schedule.html"><i class="fas fa-clock" style="font-size: 20px;"></i> Schedule</a></li>
+            <li class="sidebar-li"><a href="financial-aid.html"><i class="fas fa-dollar-sign" style="font-size: 20px;"></i> Financial Aid</a></li>
+            <li class="sidebar-li"><a href="financial-aid.html"><i class="fas fa-circle-question" style="font-size: 20px;"></i> Help and Information</a></li>
+            <li class="sidebar-li"><a href="financial-aid.html"><i class="fas fa-gear" style="font-size: 20px;"></i> Settings</a></li>
+            <li class="sidebar-li"><a href="financial-aid.html"><i class="fas fa-right-from-bracket" style="font-size: 20px;"></i> Log Out</a>
+            </li>
+        </ul>
+        <div></div>
+        <ul style="list-style: none; padding: 0; font-size:10px;">
+            <li><a href="index.html">Privacy</a></li>
+            <li><a href="major-selection.html">Terms</a></li>
+            <li><a href="study-plan.html">Accessibility</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="main-header">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h1>AU Academic Advisor</h1>
+                    <nav aria-label="breadcrumb mt-0 mb-0">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Schedule Generator</li>
+                        </ol>
+                    </nav>                </div>
+                <div class="col-auto text-end">
+                    <h1>Mehr Awan</h1>
+                    <p>U12345678</p>
+                </div>
+                <div class="col-auto text-end">
+                    <i class="fa-regular fa-user" style="font-size: 30px;"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="row mb-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-warning">Current Curriculum</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Current Major:</h5>
+                                <h2>Computer Science</h2>
+                            </div>
+                            <div class="col">
+                                <h5>Credits Applied:</h5>
+                                <h2>14</h2>
+                            </div>
+
+                            <div class="col">
+                                <h5>Overall GPA:</h5>
+                                <h2>4.0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4 mt-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Suggest a Study Plan</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Select your major or a potential other below to generate a suggested study plan for your four years.</p>
+
+                        <form id="study-plan-form">
+                            <div class="mb-3">
+                                <label for="major-select" class="form-label">Choose Your Major:</label>
+                                <select class="form-select" id="major-select" required>
+                                    <option value="" disabled selected>Select a major</option>
+                                    <option selected value="Computer Science (Current)">Computer Science</option>
+                                    <option value="Business Administration">Business Administration</option>
+                                    <option value="Biology">Biology</option>
+                                    <option value="Psychology">Psychology</option>
+                                    <option value="Engineering">Engineering</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Generate Study Plan</button>
+                        </form>
+
+                        <div id="study-plan-output" class="study-plan-output mt-4" style="display: none;">
+                            <h3>Suggested Study Plan for <span id="selected-major"></span></h3>
+                            <div id="plan-details"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("study-plan-form");
+    const studyPlanOutput = document.getElementById("study-plan-output");
+    const selectedMajorSpan = document.getElementById("selected-major");
+    const planDetails = document.getElementById("plan-details");
+
+    let studyPlans = {}; // This will store the data loaded from the JSON file
+
+    // Fetch the study plans from the JSON file
+    fetch('study-plans.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            studyPlans = data; // Store the fetched data in the studyPlans variable
+        })
+        .catch(error => {
+            console.error('Error fetching study plans:', error);
+            alert('Failed to load study plans. Please try again later.');
+        });
+
+    // Form submission handler
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const selectedMajor = document.getElementById("major-select").value;
+
+        if (selectedMajor && studyPlans[selectedMajor]) {
+            // Display the selected major
+            selectedMajorSpan.textContent = selectedMajor;
+
+            // Generate the study plan
+            const plan = studyPlans[selectedMajor];
+            let planHTML = "";
+            for (const semester in plan) {
+                planHTML += `<h4>${semester}</h4><ul>`;
+                plan[semester].forEach(course => {
+                    planHTML += `<li>${course}</li>`;
+                });
+                planHTML += `</ul>`;
+            }
+
+            planDetails.innerHTML = planHTML;
+            studyPlanOutput.style.display = "block";
+        } else {
+            alert("Please select a valid major.");
+        }
+    });
+});
+    </script>
+</body>
+
+</html>
