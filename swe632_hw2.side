@@ -1,0 +1,660 @@
+{
+  "id": "af34b06b-77cc-4e3c-9ea8-ffb9e7837343",
+  "version": "2.0",
+  "name": "swe632_hw2",
+  "url": "https://mehrbawan.github.io/",
+  "tests": [{
+    "id": "41c85c97-e578-41f7-a0f5-bd3442f70512",
+    "name": "MajorQuizTest",
+    "commands": [{
+      "id": "2280bc07-34f8-48e7-8ddf-aa52fd6f3744",
+      "comment": "",
+      "command": "open",
+      "target": "/swe632_hw2/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98a2b483-9821-48f7-b443-13200a32a8e9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fb9c1a3-eca7-4f15-86c3-bee4c0987749",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Major Selection",
+      "targets": [
+        ["linkText=Major Selection", "linkText"],
+        ["css=.sidebar-li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Major Selection')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'major-selection.html')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Major Selection')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cad85cae-14c3-44cc-8769-21ddf3737f6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(1) button:nth-child(3)",
+      "targets": [
+        ["css=.question:nth-child(1) button:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Neutral')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97f6cf34-2fd7-4e43-b487-90c309d68c34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(2) button:nth-child(5)",
+      "targets": [
+        ["css=.question:nth-child(2) button:nth-child(5)", "css:finder"],
+        ["xpath=//div[2]/div/button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d4e8acb-0eee-4fca-bab4-b1843717ef29",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(3) button:nth-child(4)",
+      "targets": [
+        ["css=.question:nth-child(3) button:nth-child(4)", "css:finder"],
+        ["xpath=//div[3]/div/button[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "511f6275-7036-4ed1-a1e4-c8ccb87a1eb7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(4) button:nth-child(3)",
+      "targets": [
+        ["css=.question:nth-child(4) button:nth-child(3)", "css:finder"],
+        ["xpath=//div[4]/div/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d91cc8b6-1b70-4f3e-9274-7ca6a6372a58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(5) button:nth-child(3)",
+      "targets": [
+        ["css=.question:nth-child(5) button:nth-child(3)", "css:finder"],
+        ["xpath=//div[5]/div/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9d44238-02be-4a74-8ef5-2bdbba0dc7b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(6) button:nth-child(5)",
+      "targets": [
+        ["css=.question:nth-child(6) button:nth-child(5)", "css:finder"],
+        ["xpath=//div[6]/div/button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "638ec3c5-2060-45ef-b716-f40b7f6f8165",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(7) button:nth-child(5)",
+      "targets": [
+        ["css=.question:nth-child(7) button:nth-child(5)", "css:finder"],
+        ["xpath=//div[7]/div/button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "314341f1-62dd-4106-8b04-ed94efec11db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(8) button:nth-child(5)",
+      "targets": [
+        ["css=.question:nth-child(8) button:nth-child(5)", "css:finder"],
+        ["xpath=//div[8]/div/button[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3baa7e4-e461-4dc3-a22c-485edcfd63a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-quiz",
+      "targets": [
+        ["id=submit-quiz", "id"],
+        ["css=#submit-quiz", "css:finder"],
+        ["xpath=//button[@id='submit-quiz']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0af1ef53-d0e2-4482-9d5b-8ab34da42ac5",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=recommended-major",
+      "targets": [
+        ["id=recommended-major", "id"],
+        ["css=#recommended-major", "css:finder"],
+        ["xpath=//h5[@id='recommended-major']", "xpath:attributes"],
+        ["xpath=//div[@id='result']/h5", "xpath:idRelative"],
+        ["xpath=//div[2]/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Engineering or Computer Science')]", "xpath:innerText"]
+      ],
+      "value": "Engineering or Computer Science"
+    }]
+  }, {
+    "id": "e6d47f97-7548-4f39-9ae9-307c337c2c32",
+    "name": "StudyPlanTest",
+    "commands": [{
+      "id": "06a28211-53fa-46f5-962c-3e86a2bde8fb",
+      "comment": "",
+      "command": "open",
+      "target": "https://mehrbawan.github.io/swe632_hw2/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abc4723b-b999-4d83-91e4-a7a7fbb3fe8c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60043059-9aa8-421d-820f-1c6ee807dbfd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Study Plan",
+      "targets": [
+        ["linkText=Study Plan", "linkText"],
+        ["css=.sidebar-li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Study Plan')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'study-plan.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Study Plan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c882ed4-1b12-4d65-9030-6bf0aff91b0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=major-select",
+      "targets": [
+        ["id=major-select", "id"],
+        ["css=#major-select", "css:finder"],
+        ["xpath=//select[@id='major-select']", "xpath:attributes"],
+        ["xpath=//form[@id='study-plan-form']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f0e63ce-242e-43cc-820b-f115ffc6c506",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='study-plan-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Generate Study Plan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf1bb215-b602-4d61-9413-920a954e473e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='study-plan-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Generate Study Plan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "742e18ac-cc8c-4a05-bf9e-0f6c7c9495b1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='study-plan-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Generate Study Plan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0c60f43-63a1-46e8-8405-faa1a4540836",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=selected-major",
+      "targets": [
+        ["id=selected-major", "id"],
+        ["css=#selected-major", "css:finder"],
+        ["xpath=//span[@id='selected-major']", "xpath:attributes"],
+        ["xpath=//div[@id='study-plan-output']/h3/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Computer Science (Current)')]", "xpath:innerText"]
+      ],
+      "value": "Computer Science (Current)"
+    }, {
+      "id": "c92e02b5-4ab8-4f0f-b3bc-a67a58f2f791",
+      "comment": "",
+      "command": "click",
+      "target": "id=major-select",
+      "targets": [
+        ["id=major-select", "id"],
+        ["css=#major-select", "css:finder"],
+        ["xpath=//select[@id='major-select']", "xpath:attributes"],
+        ["xpath=//form[@id='study-plan-form']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "964a1ca4-0752-482f-861c-215f41eb103d",
+      "comment": "",
+      "command": "select",
+      "target": "id=major-select",
+      "targets": [],
+      "value": "label=Business Administration"
+    }, {
+      "id": "786af4e2-19c8-4f2f-a151-9ad8886ab014",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='study-plan-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Generate Study Plan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e58fb266-5e35-4351-96f7-1f1a6dc13422",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=selected-major",
+      "targets": [
+        ["id=selected-major", "id"],
+        ["css=#selected-major", "css:finder"],
+        ["xpath=//span[@id='selected-major']", "xpath:attributes"],
+        ["xpath=//div[@id='study-plan-output']/h3/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Computer Science (Current)')]", "xpath:innerText"]
+      ],
+      "value": "Business Administration"
+    }, {
+      "id": "75f1ef77-9afb-4166-abd7-a6c07f42b1b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=major-select",
+      "targets": [
+        ["id=major-select", "id"],
+        ["css=#major-select", "css:finder"],
+        ["xpath=//select[@id='major-select']", "xpath:attributes"],
+        ["xpath=//form[@id='study-plan-form']/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff02a87d-15ef-452c-a6c3-dd62f25b2feb",
+      "comment": "",
+      "command": "select",
+      "target": "id=major-select",
+      "targets": [],
+      "value": "label=Engineering"
+    }, {
+      "id": "c5ce2555-2e8d-4367-b068-fb821031db0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='study-plan-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Generate Study Plan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f051fcf-ac05-4660-91b3-a39d45c77d9c",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=selected-major",
+      "targets": [
+        ["id=selected-major", "id"],
+        ["css=#selected-major", "css:finder"],
+        ["xpath=//span[@id='selected-major']", "xpath:attributes"],
+        ["xpath=//div[@id='study-plan-output']/h3/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Computer Science (Current)')]", "xpath:innerText"]
+      ],
+      "value": "Engineering"
+    }]
+  }, {
+    "id": "d9757cdc-b4ca-4e03-a091-6853fdbc1f6c",
+    "name": "FinancialAidTest",
+    "commands": [{
+      "id": "b43b5699-895b-4920-af68-b4701001444f",
+      "comment": "",
+      "command": "open",
+      "target": "https://mehrbawan.github.io/swe632_hw2/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8de98b8-7c5e-4d57-bfa4-3b1d5f031afd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2eea7b41-8318-4540-9294-8724b56efb5d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Financial Aid",
+      "targets": [
+        ["linkText=Financial Aid", "linkText"],
+        ["css=.sidebar-li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Financial Aid')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'financial-aid.html')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Financial Aid')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f9e2a0f-2989-4598-8f72-3c7dbcf541af",
+      "comment": "",
+      "command": "click",
+      "target": "css=#headingOne > .accordion-button",
+      "targets": [
+        ["css=#headingOne > .accordion-button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//h2[@id='headingOne']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'What types of financial aid are available?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a651888-b652-4294-aa26-71707a8b3a65",
+      "comment": "",
+      "command": "click",
+      "target": "css=#headingTwo > .accordion-button",
+      "targets": [
+        ["css=#headingTwo > .accordion-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//h2[@id='headingTwo']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/h2/button", "xpath:position"],
+        ["xpath=//button[contains(.,'How do I apply for financial aid?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bd95c4d-17d0-4af3-8230-81b7710d94a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#headingThree > .accordion-button",
+      "targets": [
+        ["css=#headingThree > .accordion-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//h2[@id='headingThree']/button", "xpath:idRelative"],
+        ["xpath=//div[3]/h2/button", "xpath:position"],
+        ["xpath=//button[contains(.,'What is the income limit for financial aid?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44f74932-a876-429b-a28d-cddd4531bf71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(3) button:nth-child(1)",
+      "targets": [
+        ["css=.question:nth-child(3) button:nth-child(1)", "css:finder"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Yes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a019182e-7634-4f20-857e-bf2c59927dd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(4) button:nth-child(1)",
+      "targets": [
+        ["css=.question:nth-child(4) button:nth-child(1)", "css:finder"],
+        ["xpath=//div[4]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7943bf5-a04f-4a9b-8ce5-862b75bf1c7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(5) button:nth-child(1)",
+      "targets": [
+        ["css=.question:nth-child(5) button:nth-child(1)", "css:finder"],
+        ["xpath=//div[5]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c318f29-cb82-4a6c-8cca-6f1b7895277b",
+      "comment": "",
+      "command": "click",
+      "target": "id=household-size",
+      "targets": [
+        ["id=household-size", "id"],
+        ["css=#household-size", "css:finder"],
+        ["xpath=//input[@id='household-size']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f485e4b4-821e-4cab-87a9-4684da215e19",
+      "comment": "",
+      "command": "type",
+      "target": "id=household-size",
+      "targets": [
+        ["id=household-size", "id"],
+        ["css=#household-size", "css:finder"],
+        ["xpath=//input[@id='household-size']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "9b43f4b0-c1a5-452b-915c-42a7a9bd792b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.quiz-container",
+      "targets": [
+        ["css=.quiz-container", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc81c25f-7577-4a9f-9a2e-4bc753a7b98e",
+      "comment": "",
+      "command": "click",
+      "target": "id=income",
+      "targets": [
+        ["id=income", "id"],
+        ["css=#income", "css:finder"],
+        ["xpath=//input[@id='income']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "397f6198-bd47-4931-8e80-9fe74c86e6b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=income",
+      "targets": [
+        ["id=income", "id"],
+        ["css=#income", "css:finder"],
+        ["xpath=//input[@id='income']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "96576c25-3a0c-4fd6-97d3-f39c2b221eb2",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-quiz",
+      "targets": [
+        ["id=submit-quiz", "id"],
+        ["css=#submit-quiz", "css:finder"],
+        ["xpath=//button[@id='submit-quiz']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check Eligibility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d7a0d77-0291-4917-94e5-77d76634e63a",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=eligibility-result",
+      "targets": [],
+      "value": "You likely qualify for significant financial aid!"
+    }, {
+      "id": "61cf3feb-aa2a-41e5-a6a0-2852f8dc6c9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=income",
+      "targets": [
+        ["id=income", "id"],
+        ["css=#income", "css:finder"],
+        ["xpath=//input[@id='income']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0e743c3-2913-430b-b627-4bae85493138",
+      "comment": "",
+      "command": "type",
+      "target": "id=income",
+      "targets": [
+        ["id=income", "id"],
+        ["css=#income", "css:finder"],
+        ["xpath=//input[@id='income']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10000000"
+    }, {
+      "id": "b837b41d-b890-4603-b53d-5e5ad9f9100c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(3) button:nth-child(2)",
+      "targets": [
+        ["css=.question:nth-child(3) button:nth-child(2)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'No')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fefc03c8-abc4-4c1e-8149-d7fdd3d9b4d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(4) button:nth-child(2)",
+      "targets": [
+        ["css=.question:nth-child(4) button:nth-child(2)", "css:finder"],
+        ["xpath=//div[4]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cecbca2-786a-4ab8-ab96-926fb74977a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question:nth-child(5) button:nth-child(2)",
+      "targets": [
+        ["css=.question:nth-child(5) button:nth-child(2)", "css:finder"],
+        ["xpath=//div[5]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2ef3928-7d73-4123-a8f5-186072389114",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-quiz",
+      "targets": [
+        ["id=submit-quiz", "id"],
+        ["css=#submit-quiz", "css:finder"],
+        ["xpath=//button[@id='submit-quiz']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check Eligibility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ae9e74a-2d31-4e7d-978c-c268b6477e73",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=eligibility-result",
+      "targets": [],
+      "value": "You may qualify for limited financial aid."
+    }]
+  }, {
+    "id": "86fd7b4e-bc8f-4f09-949c-3876e050ca83",
+    "name": "ScheduleTest",
+    "commands": [{
+      "id": "a9c784a0-6377-463e-8ad6-b01b34c3169d",
+      "comment": "",
+      "command": "open",
+      "target": "/swe632_hw2/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb7cf158-3b47-42c5-8600-7d561b969aed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d002276-a1bd-4469-9ca8-d02d538b98ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Schedule",
+      "targets": [
+        ["linkText=Schedule", "linkText"],
+        ["css=.sidebar-li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Schedule')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'schedule.html')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cecf8fd-0550-4cb7-9193-e43429c3fe73",
+      "comment": "",
+      "command": "click",
+      "target": "id=generate-schedule",
+      "targets": [
+        ["id=generate-schedule", "id"],
+        ["css=#generate-schedule", "css:finder"],
+        ["xpath=//button[@id='generate-schedule']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Generate Weekly Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6405fc88-7982-4700-b251-8b72152beae6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.card-body:nth-child(1)",
+      "targets": [
+        ["css=.card-body:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='weekly-calendar']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "38e131f0-86b5-4233-90d6-734a07942246",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["41c85c97-e578-41f7-a0f5-bd3442f70512"]
+  }],
+  "urls": ["https://mehrbawan.github.io/"],
+  "plugins": []
+}

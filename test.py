@@ -6,7 +6,7 @@ def first_test_script():
    driver = webdriver.Chrome()
 
    # navigate to the website
-   driver.get("https://www.tutorialspoint.com")
+   driver.get("https://mehrbawan.github.io/swe632_hw2/")
 
    # Get the actual title of the page
    title = driver.title
